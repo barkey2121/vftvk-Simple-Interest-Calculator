@@ -16,12 +16,12 @@ function compute()
     var interest = principal * years * rate /100;
 
     //sets dates/years info
-    var date = new Date();
-    var year = parseInt(date.getFullYear()) + parseInt(years);
+    var dateNow = new Date();
+    var yearNow = parseInt(dateNow.getFullYear()) + parseInt(years);
 
     //displays output
     var finalOutput = document.getElementById("result");
-    finalOutput.innerHTML="If you deposit "+"<span class='highlight'>"+principal+"</span>."+", <br> at an interest rate of "+"<span class='highlight'>"+rate+"</span>%."+"<br> You will receive an amount of "+"<span class='highlight'>"+interest+"</span>"+", <br> in the year "+"<span class='highlight'>"+year+"</span>";
+    finalOutput.innerHTML="If you deposit "+"<span class='highlight'>"+principal+"</span>."+", <br> at an interest rate of "+"<span class='highlight'>"+rate+"</span>%."+"<br> You will receive an amount of "+"<span class='highlight'>"+interest+"</span>"+", <br> in the year "+"<span class='highlight'>"+yearNow+"</span>";
 }
     //function to update rate
     function updateRate() 
